@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Adicione o link para o CSS do Bootstrap aqui -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+        <div class="card text-center">
+            <div class="card-header">
+                Informações do Funcionário
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Nome: {{ colaborador.nome }}</h5>
+                <h5 class="card-title">CPF: {{ colaborador.cpf }}</h5>
+                <h5 class="card-title">Data de Nascimento: {{ colaborador.data_nascimento }}</h5>
+                <!-- Outros atributos do Colaborador aqui -->
+            </div>
+            <div class="card-footer text-muted">
+                <!-- Informações adicionais sobre o funcionário aqui -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
